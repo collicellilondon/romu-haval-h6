@@ -1,0 +1,1 @@
+export function RomuLighting(){return<><ambientLight intensity={.38}/><directionalLight position={[-6,9,5]} intensity={3.1} color="#fff5e5" castShadow shadow-mapSize={[2048,2048]} shadow-bias={-.0002}/><directionalLight position={[7,4,-6]} intensity={1.8} color="#8ebcff"/><pointLight position={[0,3,5]} intensity={16} distance={15} color="#ffffff"/></>}

@@ -1,0 +1,1 @@
+import{VEHICLE_URL}from'../three-config';export type AssetState='checking'|'ready'|'missing'|'error';export class VehicleAssetManager{static readonly url=VEHICLE_URL;static async inspect(signal?:AbortSignal):Promise<AssetState>{try{const r=await fetch(this.url,{method:'HEAD',cache:'no-store',signal});return r.ok?'ready':r.status===404?'missing':'error'}catch{return'error'}}}

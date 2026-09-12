@@ -1,0 +1,1 @@
+import{useEffect,useState}from'react';import{VehicleAssetManager,type AssetState}from'../services/VehicleAssetManager';export function useVehicleAsset(){const[s,setS]=useState<AssetState>('checking');useEffect(()=>{const c=new AbortController();VehicleAssetManager.inspect(c.signal).then(setS);return()=>c.abort()},[]);return s}

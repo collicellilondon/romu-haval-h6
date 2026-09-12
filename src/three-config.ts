@@ -1,0 +1,1 @@
+export const VEHICLE_URL='/models/romu-haval-h6.glb';export const meshMap={body:['body','paint'],glass:['glass','window'],wheels:['wheel','rim'],tires:['tire','tyre'],headlights:['headlight','headlamp'],taillights:['taillight','rear_light'],lightbar:['lightbar','giroflex','emergency'],interior:['interior','seat','dashboard']}as const;

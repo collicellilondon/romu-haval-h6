@@ -1,0 +1,1 @@
+import{Environment,Sky}from'@react-three/drei';export function RomuEnvironment(){return<><color attach="background" args={['#77828b']}/><fog attach="fog" args={['#8d959b',18,56]}/><Sky distance={450000} sunPosition={[-4,2,-8]} turbidity={7} rayleigh={1.8}/><Environment preset="warehouse" environmentIntensity={.7}/></>}

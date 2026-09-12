@@ -1,0 +1,1 @@
+import{ContactShadows}from'@react-three/drei';export function Ground(){return<><mesh rotation-x={-Math.PI/2} receiveShadow><planeGeometry args={[180,180]}/><meshStandardMaterial color="#252a2e" roughness={.94} metalness={.02}/></mesh><ContactShadows position={[0,.015,0]} opacity={.72} scale={14} blur={2.4} far={6}/></>}
