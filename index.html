@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ROMU | HAVAL H6</title>
+<style>
+:root{color-scheme:dark;--black:#050505;--gold:#cba64b;--wine:#60141b;--cream:#eee8d7;--line:#4b3d22}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:#f7f4ec;font-family:Arial,sans-serif;overflow-x:hidden}.nav{position:fixed;z:top;top:0;inset-inline:0;height:70px;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:linear-gradient(#050505ed,transparent)}.brand{font-weight:900;letter-spacing:.14em}.brand b{color:var(--gold)}.nav div:last-child{display:flex;gap:24px}.nav a{color:#d7d0c2;text-decoration:none;font-size:11px;letter-spacing:.16em;text-transform:uppercase}.slide{position:relative;min-height:100svh;padding:98px 5vw 52px;display:grid;align-items:center;overflow:hidden}.num{position:absolute;right:5vw;top:92px;font-size:11px;letter-spacing:.2em;color:#a99771}.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}h1,h2{margin:14px 0 24px;letter-spacing:-.06em;line-height:.92}.hero{background:#080605}.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050505 0,#050505d9 24%,transparent 63%),linear-gradient(0deg,#050505 0,transparent 35%)}.heroContent{position:relative;z-index:2;width:min(660px,49vw);display:grid;grid-template-columns:104px 1fr;gap:24px;align-items:center}.corp{width:104px;height:130px;object-fit:cover;object-position:50% 55%;border:1px solid var(--gold);box-shadow:0 0 40px #cba64b35}.hero h1{font-size:clamp(58px,9vw,132px)}.hero h1 small{display:block;color:var(--gold);font-size:.22em;letter-spacing:.18em;margin-top:16px}.hero p{grid-column:2;color:#d4cbbb;font-size:clamp(17px,1.5vw,22px);line-height:1.5}.orbit{grid-template-columns:.58fr 1.42fr;gap:3vw;background:radial-gradient(circle at 66% 48%,#282217 0,#0c0b09 44%,#050505 76%)}.orbit h2,.identity h2,.end h2{font-size:clamp(42px,6vw,86px)}.orbit p,.identity p{font-size:17px;line-height:1.65;color:#bdb5a6}.viewer{position:relative;width:min(76vw,920px);aspect-ratio:3/2;cursor:ew-resize;touch-action:none;filter:drop-shadow(0 34px 40px #000d)}.frame{position:absolute;inset:0;background-image:url('assets/romu-360.png');background-size:400% 300%;background-repeat:no-repeat;will-change:opacity}.frameB{opacity:0}.hint{position:absolute;left:50%;bottom:3%;transform:translateX(-50%);white-space:nowrap;border:1px solid #796637;background:#080705dc;padding:9px 13px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}.angle{display:flex;align-items:center;gap:12px;margin-top:24px;font-size:12px;color:#d3c7ad}.track{height:2px;flex:1;background:#3b3324}.track i{display:block;height:100%;width:0;background:var(--gold)}.gallery{display:block;background:var(--cream);color:#15110a}.gallery h2{font-size:clamp(46px,7vw,96px)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#887957}.card{aspect-ratio:3/2;position:relative;background:#090806;overflow:hidden}.crop{position:absolute;inset:0;background:url('assets/romu-360.png') 0 0/400% 300% no-repeat}.card span{position:absolute;left:16px;bottom:14px;background:#070604d9;color:#fff;padding:8px 10px;font-size:11px;letter-spacing:.16em}.identity{grid-template-columns:.8fr 1.2fr;gap:6vw;background:linear-gradient(135deg,#130e08,#050505)}.badgeLarge{width:min(420px,38vw);max-height:70vh;object-fit:cover;object-position:center;border:1px solid var(--gold);box-shadow:0 24px 80px #000}.facts{display:grid;grid-template-columns:1fr 1fr;margin-top:34px;border-top:1px solid var(--line)}.fact{padding:18px 18px 18px 0;border-bottom:1px solid var(--line)}.fact b{display:block;color:var(--gold);font-size:12px;letter-spacing:.15em;text-transform:uppercase}.fact span{color:#aaa18f;font-size:13px}.end{text-align:center;place-items:center;background:radial-gradient(circle,#341219 0,#100607 42%,#050505 75%)}.endContent{z-index:2}.end h2 b{color:var(--gold)}.note{position:absolute;bottom:18px;left:5vw;right:5vw;text-align:center;color:#766e60;font-size:11px}.full{position:fixed;right:20px;bottom:20px;z-index:30;border:1px solid #7d6938;background:#080705de;color:white;padding:10px 12px;cursor:pointer}@media(max-width:900px){.nav div:last-child{display:none}.slide{min-height:auto;padding-top:92px;padding-bottom:70px}.hero,.end{min-height:100svh}.heroContent{width:86vw;grid-template-columns:78px 1fr}.corp{width:78px;height:100px}.orbit,.identity{grid-template-columns:1fr}.viewer{width:90vw}.grid{grid-template-columns:1fr}.badgeLarge{width:min(78vw,420px)}.hero p{grid-column:1/3}.num{top:76px}}@media(max-width:520px){.hero h1{font-size:58px}.orbit h2,.identity h2{font-size:44px}.facts{grid-template-columns:1fr}.full{display:none}}
+</style>
+<style>.history{display:block;background:#eee8d7;color:#171108}.historyTop{display:grid;grid-template-columns:.72fr 1.28fr;gap:6vw;align-items:end;margin-bottom:60px}.history h2{font-size:clamp(48px,7vw,96px)}.historyLead{font-size:19px;line-height:1.6;color:#564b38;max-width:720px}.timeline{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid #171108}.moment{position:relative;padding:30px 25px 22px 0;border-right:1px solid #b8aa8c}.moment:before{content:"";position:absolute;top:-9px;left:0;width:12px;height:12px;border:3px solid #eee8d7;border-radius:50%;background:#60141b}.year{font-size:clamp(34px,4vw,58px);font-weight:900;letter-spacing:-.06em;color:#60141b}.moment h3{margin:10px 0;font-size:18px}.moment p{margin:0;padding-right:18px;color:#665a45;font-size:14px;line-height:1.55}.mission{display:grid;grid-template-columns:.5fr 1.5fr;gap:5vw;margin-top:44px;padding-top:28px;border-top:1px solid #b8aa8c}.mission b{color:#60141b;font-size:12px;letter-spacing:.18em;text-transform:uppercase}.mission p{font-size:clamp(20px,2vw,30px);line-height:1.4;margin:0}.sources{margin-top:34px;color:#6d624f;font-size:12px}.sources a{color:#60141b}.sourceLabel{display:inline-block;border:1px solid #ad9e80;padding:5px 7px;margin-right:9px}.legacy{grid-template-columns:.7fr 1.3fr;gap:6vw;background:linear-gradient(135deg,#100b06,#050505)}.legacy h2{font-size:clamp(46px,7vw,96px)}.legacyCards{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.legacyCard{padding:25px 24px 25px 0;border-bottom:1px solid var(--line)}.legacyCard strong{display:block;color:var(--gold);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:9px}.legacyCard span{color:#b9b09f;line-height:1.55}@media(max-width:900px){.historyTop,.mission,.legacy{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr}.moment{border-bottom:1px solid #b8aa8c}}@media(max-width:520px){.timeline,.legacyCards{grid-template-columns:1fr}}</style>
+<style>.corp,.badgeLarge{filter:drop-shadow(0 28px 48px #000c)!important}.brand{display:flex;align-items:center;gap:11px;white-space:nowrap}.brand span{font-size:12px;letter-spacing:.12em}.brand b{padding:5px 7px;border-left:1px solid #3b444e;color:#d52a38;font-size:12px}@media(max-width:640px){.brand span{font-size:10px;letter-spacing:.08em}.brand b{display:none}}</style>
+</head>
+<body>
+<nav class="nav">
+<div class="brand"><span>ROMU — RONDA OSTENSIVA MUNICIPAL</span><b>H6</b>
+</div>
+<div>
+<a href="#inicio">Viatura</a>
+<a href="#historia">História</a>
+<a href="#giro">360°</a>
+<a href="#vistas">Vistas</a>
+<a href="#missao">Missão</a>
+</div>
+</nav>
+<style>@keyframes fogA{0%{transform:translate3d(-7%,2%,0) scale(1.08);opacity:.2}45%{opacity:.55}100%{transform:translate3d(5%,-2%,0) scale(1.18);opacity:.28}}@keyframes fogB{0%{transform:translate3d(7%,0,0) scaleX(-1) scale(1.12);opacity:.12}55%{opacity:.38}100%{transform:translate3d(-5%,-3%,0) scaleX(-1) scale(1.2);opacity:.18}}.smoke{position:absolute;z-index:1;left:-8%;bottom:-10%;width:116%;height:62%;object-fit:cover;object-position:bottom;pointer-events:none;mix-blend-mode:screen}.smokeA{animation:fogA 13s ease-in-out infinite alternate}.smokeB{animation:fogB 17s ease-in-out infinite alternate;filter:blur(4px)}.heroContent{z-index:4}.corp{height:auto!important;object-fit:contain!important;border:0!important;box-shadow:none!important;filter:drop-shadow(0 16px 30px #000) drop-shadow(0 0 14px #cba64b44)}.viewer{border:1px solid #5e5030;background:#060504;box-shadow:inset 0 0 70px #000,0 35px 90px #000}.viewer:after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,#ffffff0a 49%,transparent 63%);transform:translateX(-100%);animation:sweep 6s ease-in-out infinite;pointer-events:none}@keyframes sweep{0%,35%{transform:translateX(-100%)}75%,100%{transform:translateX(100%)}}.orbitPanel{align-self:center}.viewerTop{position:absolute;z-index:3;left:18px;right:18px;top:15px;display:flex;justify-content:space-between;color:#bfb397;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.viewerControls{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.control{border:1px solid #655633;background:#0b0906;color:#e8dfcc;padding:9px 12px;cursor:pointer;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.control.active,.control:hover{background:#cba64b;color:#090704}.speed{display:flex;align-items:center;gap:10px;margin-left:auto;color:#a99d85;font-size:11px}.speed input{accent-color:#cba64b}.stageAngle{position:absolute;right:20px;bottom:18px;z-index:4;color:#cba64b;font-size:42px;font-weight:900;letter-spacing:-.06em}.badgeLarge{height:auto!important;object-fit:contain!important;border:0!important;box-shadow:none!important;filter:drop-shadow(0 28px 48px #000c)}</style>
+<style>.smoke{height:52%;filter:brightness(.72)}.smokeB{filter:blur(4px) brightness(.68)}</style>
+<style>:root{--black:#030507;--gold:#aab2bb;--wine:#4e1017;--cream:#0b0e12;--line:#28303a}body{background:#030507;color:#eef1f4}.nav{height:76px;background:linear-gradient(180deg,#030507 0,#030507e8 58%,transparent);border-bottom:1px solid #ffffff0a}.brand{color:#f1f3f5}.brand b{color:#c21f2d}.nav a{color:#9ea6af}.nav a:hover{color:#fff}.eyebrow{color:#aeb6bf}.num{color:#707984}.history{background:radial-gradient(circle at 15% 20%,#151a20 0,#090c10 38%,#030507 82%);color:#eef1f4}.history:before,.gallery:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#ffffff04 1px,transparent 1px),linear-gradient(#ffffff03 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(to bottom,#0008,transparent 75%)}.historyLead,.moment p{color:#9da5ae}.timeline{border-color:#4a535e}.moment{border-color:#28303a}.moment:before{border-color:#0b0e12;background:#b51d2a;box-shadow:0 0 0 5px #b51d2a1f}.year{color:#d5dae0}.mission{border-color:#303842}.mission b{color:#b7bec6}.sources{color:#808994}.sources a,.officialLinks a,.chronoSources a{color:#c6ccd2;text-decoration:none}.gallery{background:linear-gradient(145deg,#11161c,#05070a 72%);color:#eef1f4}.grid{background:#29313a;box-shadow:0 28px 70px #000}.card{background:#05070a}.card span{background:#05070ae8;border-left:2px solid #b51d2a;color:#e9edf0}.legacy{background:radial-gradient(circle at 90% 25%,#181d24,#07090c 52%,#030507)}.legacyCards,.legacyCard{border-color:#2c333c}.legacyCard strong{color:#c3c9d0}.legacyCard span{color:#959da6}.chronology{background:radial-gradient(circle at 12% 46%,#1b2027 0,#090c10 35%,#030507 78%)}.chronoGrid{border-color:#3a424c}.chronoItem,.chronoItem:nth-child(odd){border-color:#252c34}.chronoDate{color:#bfc6ce}.chronoText strong{color:#eef1f4}.chronoText span{color:#939ba5}.currentTag{border-color:#59626d;color:#c5cbd2}.sourceLabel{display:inline-flex!important;align-items:center;gap:8px;border:1px solid #3d4650!important;border-radius:2px;padding:7px 10px!important;margin-right:12px!important;background:#0d1116;color:#c5cbd2!important;font-weight:700;letter-spacing:.11em}.sourceLabel:before{content:"";width:13px;height:15px;display:inline-block;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='15' viewBox='0 0 13 15' fill='none'%3E%3Cpath d='M2 1h6l3 3v10H2zM8 1v3h3M4 7h5M4 10h5' stroke='%23c5cbd2' stroke-width='1.2'/%3E%3C/svg%3E")}.sources a,.officialLinks a,.chronoSources a{display:inline-flex;align-items:center;gap:5px;padding:6px 2px;border-bottom:1px solid #3d4650;transition:color .2s,border-color .2s}.sources a:after,.officialLinks a:after,.chronoSources a:after{content:"";width:11px;height:11px;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M4 2h6v6M10 2 3 9' stroke='%23aab2bb' stroke-width='1.4'/%3E%3C/svg%3E")}.sources a:hover,.officialLinks a:hover,.chronoSources a:hover{color:#fff;border-color:#b51d2a}.editorialHead span{color:#7f8892}.newsRail{border-color:#39414a}.newsCard{color:#e8ebee;border-color:#29313a;background:#090c10}.newsCard:first-child{padding-left:18px}.newsCard:hover,.newsCard:focus-visible{background:#151a20;color:#fff;transform:translateY(-4px);box-shadow:inset 0 -2px #b51d2a}.newsMeta{color:#aeb5bd}.newsCard:hover .newsMeta,.newsCard:focus-visible .newsMeta{color:#e6e9ec}.newsCard small{color:#858e98}.newsArrow{font-size:0;width:20px;height:20px;border:1px solid #3e4751;border-radius:50%;background:center/10px no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M4 2h6v6M10 2 3 9' stroke='%23d8dde2' stroke-width='1.4'/%3E%3C/svg%3E")}.officialLinks{color:#76808a}.control{border-color:#3b4550;background:#090c10;color:#d9dee3}.control.active,.control:hover{background:#b51d2a;color:#fff;border-color:#b51d2a}.speed input{accent-color:#b51d2a}.viewer{border-color:#303943}.track{background:#303740}.track i{background:#b51d2a}.stageAngle{color:#c4cbd2}.hint{border-color:#38414a;background:#070a0ee8;color:#cbd1d7}.end{background:radial-gradient(circle,#301018 0,#0c080b 42%,#030507 78%)}.end h2 b{color:#c4cad1}.full{border-color:#424b55;background:#080b0fe8;color:#e4e8eb}.full:hover{border-color:#b51d2a}.badgeLarge,.corp{filter:grayscale(1) drop-shadow(0 28px 48px #000c)!important}</style>
+<section class="slide hero" id="inicio">
+<img src="assets/romu-hero.png" alt="HAVAL H6 ROMU em cenário cinematográfico com fumaça">
+<img class="smoke smokeA" src="assets/smoke-overlay.png" alt="">
+<img class="smoke smokeB" src="assets/smoke-overlay.png" alt="">
+<div class="heroContent">
+<img class="corp" src="assets/emblema-romu-limpo.png" alt="Emblema do Policiamento Tático ROMU">
+<div>
+<div class="eyebrow">Guarda Civil Municipal de Praia Grande</div>
+<h1>ROMU<small>NOVA VIATURA HAVAL H6</small>
+</h1>
+</div>
+<p>Uma nova presença nas ruas, integrada à trajetória de preparo, disciplina e serviço do grupamento.</p>
+</div>
+<div class="num">01 / 07</div>
+</section>
+<style>.editorialLinks{margin-top:34px}.editorialHead{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:14px}.editorialHead h3{margin:0;font-size:22px;letter-spacing:-.03em}.editorialHead span{font-size:11px;letter-spacing:.17em;color:#776b55;text-transform:uppercase}.newsRail{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #9e8d6e;border-bottom:1px solid #9e8d6e}.newsCard{position:relative;min-height:158px;padding:20px 38px 20px 18px;color:#171108;text-decoration:none;border-right:1px solid #b8aa8c;transition:background .25s,color .25s,transform .25s}.newsCard:first-child{padding-left:0}.newsCard:last-child{border-right:0}.newsCard:hover,.newsCard:focus-visible{background:#60141b;color:#fff;transform:translateY(-4px);outline:none}.newsMeta{display:block;margin-bottom:13px;color:#806b3e;font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}.newsCard:hover .newsMeta,.newsCard:focus-visible .newsMeta{color:#e1c878}.newsCard strong{display:block;font-size:16px;line-height:1.28}.newsCard small{display:block;margin-top:10px;font-size:12px;line-height:1.4;color:#6a5d49}.newsCard:hover small,.newsCard:focus-visible small{color:#dfd5c3}.newsArrow{position:absolute;right:15px;top:18px;font-size:21px}.officialLinks{margin-top:17px;color:#6d624f;font-size:12px}.officialLinks a{color:#60141b}@media(max-width:900px){.newsRail{grid-template-columns:1fr 1fr}.newsCard{border-bottom:1px solid #b8aa8c}.newsCard:nth-child(2){border-right:0}}@media(max-width:520px){.newsRail{grid-template-columns:1fr}.newsCard,.newsCard:first-child{padding-left:14px;border-right:0}.editorialHead{align-items:start;flex-direction:column;gap:6px}}</style>
+<section class="slide history" id="historia">
+<div class="historyTop">
+<div>
+<div class="eyebrow">Trajetória institucional</div>
+<h2>Da Equipe Tática à ROMU</h2>
+</div>
+<p class="historyLead">A história do grupamento nasce dentro da evolução da segurança municipal de Praia Grande. A atual identidade da ROMU resulta de um processo de estruturação, treinamento e especialização construído ao longo de décadas.</p>
+</div>
+<div class="timeline">
+<article class="moment">
+<div class="year">1969</div>
+<h3>Origem da estrutura municipal</h3>
+<p>O Serviço de Vigilância e Salva-Vidas marca o início da estrutura que daria origem à Guarda Civil Municipal.</p>
+</article>
+<article class="moment">
+<div class="year">1995</div>
+<h3>Patrulhamento ostensivo</h3>
+<p>O Município cria o ROPAM, Ronda Ostensiva de Proteção e Auxílio Municipal.</p>
+</article>
+<article class="moment">
+<div class="year">2012</div>
+<h3>Equipe Tática</h3>
+<p>A GCM forma uma equipe para responder a situações de desordem pública que exigiam capacidade operacional diferenciada.</p>
+</article>
+<article class="moment">
+<div class="year">2018</div>
+<h3>Identidade ROMU</h3>
+<p>Em 28 de junho, o grupamento recebe oficialmente a denominação Rondas Ostensivas Municipais.</p>
+</article>
+</div>
+<div class="editorialLinks">
+<div class="editorialHead">
+<h3>ROMU em ação</h3>
+<span>Reportagens oficiais · abra para ler</span>
+</div>
+<div class="newsRail">
+<a class="newsCard" href="https://www2.praiagrande.sp.gov.br/noticia/id/53351" target="_blank" rel="noopener">
+<span class="newsMeta">19 AGO 2021 · OCORRÊNCIA</span>
+<strong>Apreensão de entorpecentes durante patrulhamento</strong>
+<small>Ação integrada dos grupamentos especializados da GCM.</small>
+<span class="newsArrow">↗</span>
+</a>
+<a class="newsCard" href="https://www2.praiagrande.sp.gov.br/noticia/ver/59515/romu-passa-por-treinamento-de-interven%C3%A7%C3%A3o-contra-agressor-ativo-com-policiais-do-goe" target="_blank" rel="noopener">
+<span class="newsMeta">03 AGO 2023 · TREINAMENTO</span>
+<strong>Intervenção contra agressor ativo</strong>
+<small>Capacitação teórica e prática realizada com o GOE.</small>
+<span class="newsArrow">↗</span>
+</a>
+<a class="newsCard" href="https://www2.praiagrande.sp.gov.br/noticia/agentes-da-romu-apreendem-van-que-realizava-transporte-irregular-de-passageiros-em-pg" target="_blank" rel="noopener">
+<span class="newsMeta">25 ABR 2024 · FISCALIZAÇÃO</span>
+<strong>Combate ao transporte irregular</strong>
+<small>Abordagem realizada durante patrulhamento no Bairro Mirim.</small>
+<span class="newsArrow">↗</span>
+</a>
+<a class="newsCard" href="https://www2.praiagrande.sp.gov.br/noticia/caes-caem-em-canal-em-pg-e-sao-resgatados-por-guardas-civis-municipais-" target="_blank" rel="noopener">
+<span class="newsMeta">25 ABR 2025 · RESGATE</span>
+<strong>Equipe resgata cães em canal</strong>
+<small>Atendimento acionado por moradores durante operação no Bairro Glória.</small>
+<span class="newsArrow">↗</span>
+</a>
+</div>
+<div class="officialLinks">
+<span class="sourceLabel">MEMÓRIA INSTITUCIONAL</span>
+<a href="https://www2.praiagrande.sp.gov.br/noticia/id/29475" target="_blank" rel="noopener">História da GCM</a> · <a href="https://www2.praiagrande.sp.gov.br/noticia/id/55966" target="_blank" rel="noopener">História da ROMU</a> · <a href="https://www2.praiagrande.sp.gov.br/noticia/id/56208" target="_blank" rel="noopener">Grupamentos especializados</a>
+</div>
+</div>
+<div class="num">02 / 07</div>
+</section>
+<style>.orbit{display:block;padding:94px 4vw 46px;background:radial-gradient(circle at 65% 48%,#19212a 0,#090d12 42%,#020406 82%)}.orbit:before{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(180deg,transparent,#000b),repeating-linear-gradient(90deg,#ffffff04 0 1px,transparent 1px 100px);transform:perspective(420px) rotateX(64deg);transform-origin:bottom;pointer-events:none}.orbitPanel{position:relative;z-index:5;display:grid;grid-template-columns:minmax(300px,430px) 1fr;align-items:end;gap:4vw;margin-bottom:22px}.orbitTitle h2{margin:10px 0 14px;font-size:clamp(48px,5.3vw,82px)}.orbitTitle p{margin:0;max-width:580px;color:#aeb5bd}.orbitMeta{display:flex;justify-content:flex-end;gap:28px;padding-bottom:7px}.orbitMeta div{padding-left:14px;border-left:1px solid #414a55}.orbitMeta b{display:block;color:#eef1f4;font-size:14px}.orbitMeta span{display:block;margin-top:5px;color:#77818c;font-size:10px;letter-spacing:.14em;text-transform:uppercase}.viewer{z-index:2;margin:0 auto;width:min(88vw,1120px);aspect-ratio:3/2;border:1px solid #3b4652;border-radius:3px;background:#05080b;box-shadow:inset 0 0 90px #000,0 42px 110px #000;overflow:hidden}.frame{background-image:url('assets/romu-360-4k.png');image-rendering:auto}.viewerTop{top:18px;left:22px;right:22px}.viewerTop span:first-child:before{content:"";display:inline-block;width:6px;height:6px;margin-right:8px;border-radius:50%;background:#b51d2a;box-shadow:0 0 12px #e52938}.stageAngle{right:24px;bottom:22px;font-size:34px;color:#d8dde2}.hint{bottom:22px;border:0;border-left:2px solid #b51d2a;background:#06090dc7;padding:10px 13px;color:#c9cfd5}.viewerDock{position:relative;z-index:5;width:min(88vw,1120px);margin:16px auto 0;padding:13px 14px;background:#070a0edb;border:1px solid #303943;backdrop-filter:blur(12px);display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center}.viewerControls{margin:0;flex-wrap:nowrap}.control{display:inline-flex;align-items:center;gap:8px;padding:10px 13px}.control svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.6}.angle{margin:0}.angle span{min-width:42px;color:#cdd2d7;font-variant-numeric:tabular-nums}.track{position:relative;height:3px}.track:after{content:"";position:absolute;inset:-5px 0;background:repeating-linear-gradient(90deg,transparent 0 calc(9.09% - 1px),#ffffff20 calc(9.09% - 1px) 9.09%);pointer-events:none}.speed{margin:0}.qualitySeal{position:absolute;z-index:4;left:22px;bottom:22px;display:none}@media(max-width:900px){.orbitPanel{grid-template-columns:1fr}.orbitMeta{justify-content:flex-start}.viewer{width:92vw}.viewerDock{width:92vw;grid-template-columns:1fr}.viewerControls{flex-wrap:wrap}.speed{justify-self:start}.hint{display:none}}@media(max-width:520px){.orbitMeta{display:none}.viewerControls .control[data-angle]{display:none}}</style>
+<section class="slide orbit" id="giro">
+<div class="orbitPanel">
+<div class="orbitTitle">
+<div class="eyebrow">Experiência interativa</div>
+<h2>HAVAL H6 em 360°</h2>
+<p>Controle a câmera com precisão e observe o conjunto em uma rotação cinematográfica contínua.</p>
+</div>
+<div class="orbitMeta">
+<div>
+<b>24</b>
+<span>ângulos de estúdio</span>
+</div>
+<div>
+<b>HD+</b>
+<span>prancha 3548 × 1774</span>
+</div>
+<div>
+<b>15°</b>
+<span>intervalo de captura</span>
+</div>
+</div>
+</div>
+<div class="viewer" id="viewer" aria-label="Visualizador interativo profissional do HAVAL H6 ROMU">
+<div class="viewerTop">
+<span>ROMU · R-001</span>
+<span>VISUALIZAÇÃO INTERATIVA</span>
+</div>
+<div class="frame frameA" id="a">
+</div>
+<div class="frame frameB" id="b">
+</div>
+<div class="hint">ARRASTE PARA ORBITAR</div>
+<div class="stageAngle" id="stageAngle">000°</div>
+</div>
+<div class="viewerDock">
+<div class="viewerControls">
+<button class="control" id="auto">
+<svg viewBox="0 0 16 16" aria-hidden="true">
+<path d="M4.5 2.5 12 8l-7.5 5.5z"/>
+</svg>
+<span>Giro automático</span>
+</button>
+<button class="control" data-angle="0">Frente</button>
+<button class="control" data-angle="3">Perfil</button>
+<button class="control" data-angle="6">Traseira</button>
+</div>
+<div class="angle">
+<span id="deg">000°</span>
+<div class="track">
+<i id="progress">
+</i>
+</div>
+</div>
+<label class="speed">VELOCIDADE <input id="speed" type="range" min="1" max="5" value="2">
+</label>
+</div>
+<div class="num">03 / 07</div>
+</section>
+<style>.crop{background-image:url('assets/romu-360-4k.png')}</style>
+<style>.corp,.badgeLarge{filter:drop-shadow(0 28px 48px #000c)!important}</style>
+<section class="slide gallery" id="vistas">
+<div class="eyebrow">Leitura do conjunto</div>
+<h2>Ângulos principais</h2>
+<div class="grid">
+<div class="card">
+<div class="crop" style="background-position:0 0">
+</div>
+<span>FRONTAL</span>
+</div>
+<div class="card">
+<div class="crop" style="background-position:100% 0">
+</div>
+<span>PERFIL</span>
+</div>
+<div class="card">
+<div class="crop" style="background-position:66.666% 50%">
+</div>
+<span>TRASEIRA</span>
+</div>
+</div>
+<div class="num">04 / 07</div>
+</section>
+<section class="slide legacy" id="missao">
+<div>
+<div class="eyebrow">Missão operacional</div>
+<h2>Especialização a serviço da cidade</h2>
+<p style="font-size:19px;line-height:1.6;color:#bdb5a6">A ROMU atua como grupamento tático especializado da Guarda Civil Municipal, em apoio ao policiamento setorial e às demais equipes municipais.</p>
+</div>
+<div class="legacyCards">
+<div class="legacyCard">
+<strong>Prevenção e resposta</strong>
+<span>Patrulhamento preventivo e reativo motorizado, dentro das atribuições da segurança municipal.</span>
+</div>
+<div class="legacyCard">
+<strong>Pontos críticos</strong>
+<span>Atuação em locais que demandam presença operacional diferenciada e apoio especializado.</span>
+</div>
+<div class="legacyCard">
+<strong>Ordem pública</strong>
+<span>Preservação da ordem e atuação em controle de distúrbios civis.</span>
+</div>
+<div class="legacyCard">
+<strong>Formação contínua</strong>
+<span>Treinamentos e capacitações mantêm o preparo técnico do grupamento.</span>
+</div>
+<div class="sources" style="grid-column:1/-1">
+<span class="sourceLabel">FONTE OFICIAL</span>
+<a href="https://www2.praiagrande.sp.gov.br/noticia/id/55966" target="_blank">Prefeitura de Praia Grande, 28/06/2022</a>
+</div>
+</div>
+<div class="num">05 / 07</div>
+</section>
+<style>.chronology{grid-template-columns:.52fr 1.48fr;gap:5vw;background:radial-gradient(circle at 16% 48%,#2b2213 0,#100c07 24%,#050505 68%)}.chronoMark{position:relative;display:grid;place-items:center;align-self:stretch;min-height:560px}.chronoMark:after{content:"1969 — HOJE";position:absolute;bottom:8%;font-size:12px;letter-spacing:.28em;color:var(--gold)}.chronoMark .badgeLarge{width:min(330px,28vw);opacity:.9}.chronoContent h2{font-size:clamp(42px,5.2vw,78px);margin-bottom:18px}.chronoIntro{max-width:850px;margin:0 0 26px!important;font-size:16px!important}.chronoGrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #6a5730}.chronoItem{position:relative;display:grid;grid-template-columns:94px 1fr;gap:14px;padding:15px 20px 15px 0;border-bottom:1px solid #3f351f}.chronoItem:nth-child(odd){border-right:1px solid #3f351f;margin-right:20px}.chronoDate{color:var(--gold);font-weight:900;font-size:14px;letter-spacing:.05em;line-height:1.25}.chronoText strong{display:block;color:#f2ede2;font-size:14px;margin-bottom:4px}.chronoText span{display:block;color:#aaa18f;font-size:13px;line-height:1.42}.chronoSources{margin-top:18px;color:#756c5b;font-size:11px}.chronoSources a{color:#bca466}.currentTag{display:inline-block;margin-left:8px;padding:3px 6px;border:1px solid #7c6838;color:#cdb778;font-size:9px;letter-spacing:.12em}@media(max-width:1100px){.chronology{grid-template-columns:.4fr 1.6fr}.chronoMark .badgeLarge{width:min(260px,24vw)}.chronoItem{grid-template-columns:80px 1fr}}@media(max-width:900px){.chronology{grid-template-columns:1fr}.chronoMark{display:none}.chronoGrid{grid-template-columns:1fr}.chronoItem:nth-child(odd){border-right:0;margin-right:0}}@media(max-width:520px){.chronoItem{grid-template-columns:78px 1fr;padding-right:0}.chronoContent h2{font-size:42px}}</style>
+<section class="slide identity chronology" id="identidade">
+<div class="chronoMark">
+<img class="badgeLarge" src="assets/emblema-romu-limpo.png" alt="Emblema do Policiamento Tático">
+</div>
+<div class="chronoContent">
+<div class="eyebrow">Cronologia institucional</div>
+<h2>Da origem à ROMU de hoje</h2>
+<p class="chronoIntro">Marcos públicos da evolução da segurança municipal de Praia Grande e da formação do grupamento especializado.</p>
+<div class="chronoGrid">
+<article class="chronoItem">
+<div class="chronoDate">1969</div>
+<div class="chronoText">
+<strong>Primeira estrutura</strong>
+<span>O Serviço de Vigilância e Salva-Vidas inicia a trajetória que daria origem à Guarda Civil Municipal.</span>
+</div>
+</article>
+<article class="chronoItem">
+<div class="chronoDate">1989</div>
+<div class="chronoText">
+<strong>Segurança municipal</strong>
+<span>É criada a Subsecretaria de Segurança Municipal, ampliando a estrutura administrativa da área.</span>
+</div>
+</article>
+<article class="chronoItem">
+<div class="chronoDate">1995</div>
+<div class="chronoText">
+<strong>Criação do ROPAM</strong>
+<span>Surge a Ronda Ostensiva de Proteção e Auxílio Municipal, reforçando o patrulhamento preventivo.</span>
+</div>
+</article>
+<article class="chronoItem">
+<div class="chronoDate">02 MAI<br>2001</div>
+<div class="chronoText">
+<strong>Reorganização da Guarda</strong>
+<span>A Lei Complementar nº 269 reorganiza a corporação e consolida a denominação Guarda Civil Municipal.</span>
+</div>
+</article>
+<article class="chronoItem">
+<div class="chronoDate">09 DEZ<br>2011</div>
+<div class="chronoText">
+<strong>Nova estrutura</strong>
+<span>A Lei Complementar nº 602 atualiza a organização e o plano de carreira da GCM.</span>
+</div>
+</article>
+<article class="chronoItem">
+<div class="chronoDate">2012</div>
+<div class="chronoText">
+<strong>Nasce a Equipe Tática</strong>
+<span>Uma equipe especializada passa a atender ocorrências de desordem pública que exigem preparo diferenciado.</span>
+</div>
+</article>
+<article class="chronoItem">
+<div class="chronoDate">2016</div>
+<div class="chronoText">
+<strong>Expansão e capacitação</strong>
+<span>O efetivo cresce e a formação técnica especializada é intensificada.</span>
+</div>
+</article>
+<article class="chronoItem">
+<div class="chronoDate">28 JUN<br>2018</div>
+<div class="chronoText">
+<strong>Denominação ROMU</strong>
+<span>O grupamento recebe oficialmente o nome Rondas Ostensivas Municipais.</span>
+</div>
+</article>
+<article class="chronoItem">
+<div class="chronoDate">28 JUN<br>2024</div>
+<div class="chronoText">
+<strong>Seis anos de ROMU</strong>
+<span>O grupamento chega ao sexto aniversário com 45 integrantes distribuídos em dois turnos.</span>
+</div>
+</article>
+<article class="chronoItem">
+<div class="chronoDate">2024—<br>HOJE</div>
+<div class="chronoText">
+<strong>Continuidade operacional <span class="currentTag">FASE ATUAL</span>
+</strong>
+<span>A unidade mantém patrulhamento especializado, apoio às equipes municipais e formação contínua.</span>
+</div>
+</article>
+</div>
+<div class="chronoSources">
+<span class="sourceLabel">FONTES OFICIAIS</span>
+<a href="https://www2.praiagrande.sp.gov.br/noticia/id/29475" target="_blank">História da GCM</a> · <a href="https://www2.praiagrande.sp.gov.br/noticia/id/55966" target="_blank">História da ROMU</a> · <a href="https://www2.praiagrande.sp.gov.br/noticiaNP/id/1083" target="_blank">ROMU — 6 anos</a>
+</div>
+</div>
+<div class="num">06 / 07</div>
+</section>
+<style>.editorialLinks{position:relative;margin-top:42px;padding:30px;background:linear-gradient(145deg,#0c1117,#06090d);border:1px solid #242d37;box-shadow:0 28px 70px #0008}.editorialLinks:before{content:"";position:absolute;top:-1px;left:30px;width:84px;height:2px;background:#b51d2a}.editorialHead{align-items:center;margin-bottom:22px}.editorialHead h3{font-size:30px;color:#f2f4f6;letter-spacing:-.04em}.editorialHead span{color:#8c959f;font-weight:700}.newsRail{counter-reset:news;gap:12px;border:0;background:transparent}.newsCard,.newsCard:first-child{counter-increment:news;min-height:220px;padding:54px 26px 24px!important;background:linear-gradient(160deg,#121820,#090d12);border:1px solid #29333e!important;border-radius:3px;color:#eef1f4!important;overflow:hidden;box-shadow:0 12px 30px #0005}.newsCard:before{content:"0" counter(news);position:absolute;left:24px;top:18px;color:#5c6671;font-size:12px;font-weight:800;letter-spacing:.16em}.newsCard:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#b51d2a;transform:scaleX(0);transform-origin:left;transition:transform .28s}.newsCard:hover,.newsCard:focus-visible{background:linear-gradient(160deg,#1a222c,#0b1016);transform:translateY(-6px);box-shadow:0 22px 50px #000a}.newsCard:hover:after,.newsCard:focus-visible:after{transform:scaleX(1)}.newsMeta{margin-bottom:18px!important;color:#d24a56!important;font-size:10px!important}.newsCard strong{color:#f4f6f8!important;font-size:18px!important;line-height:1.3!important;letter-spacing:-.015em}.newsCard small{margin-top:14px!important;color:#9fa8b2!important;font-size:13px!important;line-height:1.5!important}.newsArrow{top:16px!important;right:18px!important;width:25px!important;height:25px!important;border-color:#46515d!important;background-color:#111820!important}.officialLinks{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:20px;padding-top:18px;border-top:1px solid #242d37;color:#7d8791}.officialLinks .sourceLabel{margin-right:10px!important;background:#11171e}.officialLinks a{padding:8px 10px!important;background:#0b1016;border:1px solid #303a45!important;border-radius:2px;color:#cbd1d7!important}.officialLinks a:hover{background:#151c24;border-color:#596572!important;color:#fff!important}.endCopyright{position:absolute;left:5vw;right:5vw;bottom:24px;display:flex;align-items:center;justify-content:space-between;padding-top:15px;border-top:1px solid #ffffff14;color:#747d86;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.endCopyright b{color:#c8ced4;letter-spacing:.18em}.end .note{position:static;margin-top:34px;color:#727b84}@media(max-width:1100px){.newsRail{grid-template-columns:1fr 1fr}.newsCard{min-height:190px}}@media(max-width:520px){.editorialLinks{padding:22px 16px}.editorialHead h3{font-size:26px}.newsRail{grid-template-columns:1fr}.newsCard{min-height:180px}.endCopyright{display:block;text-align:center;line-height:1.8}}</style>
+<section class="slide end">
+<div class="endContent">
+<div class="eyebrow">Rondas Ostensivas Municipais</div>
+<h2>Uma trajetória de<br>
+<b>preparo e serviço</b>
+</h2>
+<p style="font-size:18px;color:#b9b09f">Da Equipe Tática de 2012 à identidade consolidada da ROMU.</p>
+<div class="note">Representação conceitual da nova viatura. Validar medidas e grafismos antes da aplicação física.</div>
+</div>
+<footer class="endCopyright">
+<span>© 2026 <b>ColliDev</b>
+</span>
+<span>Todos os direitos reservados</span>
+</footer>
+<div class="num">07 / 07</div>
+</section>
+<button class="full" id="full">⛶ Tela cheia</button>
+<script>const v=document.querySelector('#viewer'),a=document.querySelector('#a'),b=document.querySelector('#b'),deg=document.querySelector('#deg'),stage=document.querySelector('#stageAngle'),bar=document.querySelector('#progress'),autoBtn=document.querySelector('#auto'),speed=document.querySelector('#speed');const total=24,sheets=['assets/romu-360-4k.png','assets/romu-360-intermediate-4k.png'];let cur=0,target=0,down=false,startX=0,startTarget=0,auto=false,lastTime=performance.now();function place(el,n){const frame=((n%total)+total)%total,slot=Math.floor(frame/2),p=[slot%4,Math.floor(slot/4)];el.style.backgroundImage=`url('${sheets[frame%2]}')`;el.style.backgroundPosition=`${p[0]*100/3}% ${p[1]*50}%`}function stopAuto(){auto=false;autoBtn.classList.remove('active');const label=autoBtn.querySelector('span');if(label)label.textContent='Giro automático'}function render(now){if(auto)target+=(now-lastTime)*.00036*Number(speed.value);lastTime=now;let delta=target-cur;if(Math.abs(delta)>total/2)delta-=Math.sign(delta)*total;cur+=delta*.075;let norm=((cur%total)+total)%total,base=Math.floor(norm),mix=norm-base;mix=mix*mix*(3-2*mix);place(a,base);place(b,base+1);a.style.opacity=1-mix;b.style.opacity=mix;const d=norm*15,label=String(Math.round(d)).padStart(3,'0')+'°';deg.textContent=label;stage.textContent=label;bar.style.width=d/345*100+'%';requestAnimationFrame(render)}v.addEventListener('pointermove',e=>{const r=v.getBoundingClientRect();if(e.pointerType==='mouse'&&!down&&!auto)target=(e.clientX-r.left)/r.width*23.999;if(down)target=startTarget+(e.clientX-startX)/30});v.addEventListener('pointerdown',e=>{down=true;stopAuto();startX=e.clientX;startTarget=target;v.setPointerCapture(e.pointerId)});v.addEventListener('pointerup',()=>down=false);v.addEventListener('pointercancel',()=>down=false);autoBtn.onclick=()=>{auto=!auto;autoBtn.classList.toggle('active',auto);const label=autoBtn.querySelector('span');if(label)label.textContent=auto?'Pausar giro':'Giro automático'};document.querySelectorAll('[data-angle]').forEach(btn=>btn.onclick=()=>{stopAuto();target=Number(btn.dataset.angle)*2});document.querySelector('#full').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();requestAnimationFrame(render);</script>
+</body>
+</html>
