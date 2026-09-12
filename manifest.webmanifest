@@ -1,0 +1,21 @@
+{
+  "name": "ROMU H6 Experience",
+  "short_name": "ROMU H6",
+  "description": "Apresentação interativa da viatura ROMU HAVAL H6.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030507",
+  "theme_color": "#030507",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
