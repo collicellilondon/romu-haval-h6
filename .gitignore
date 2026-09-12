@@ -1,3 +1,4 @@
 .vercel
 .npm-cache
+.vercel-cache
 Thumbs.db
